@@ -23,7 +23,7 @@ RUN gradle build
 RUN gradle bootJar
 
 # Main Image
-FROM openjdk:11.0.15-jre-slim-buster
+FROM openjdk:22-ea-28-jdk-oracle
 
 #Java
 RUN apt-get -y update && apt-get -y install curl && apt-get -y clean
